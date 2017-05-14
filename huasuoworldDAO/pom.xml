@@ -29,21 +29,11 @@
 			<version>${huasuoworldCommon}</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jdbc</artifactId>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-connector-java}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
@@ -51,8 +41,8 @@
 			<version>${mybatis-spring-boot-starter}</version>
 			<exclusions>
 				<exclusion>
-					<artifactId>org.springframework.boot</artifactId>
-					<groupId>spring-boot-starter</groupId>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -74,6 +64,21 @@
 					</execution>
 				</executions>
 			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
+<!-- 				<artifactId>maven-help-plugin</artifactId> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<phase>generate-resources</phase> -->
+<!-- 						<goals> -->
+<!-- 							<goal>effective-pom</goal> -->
+<!-- 						</goals> -->
+<!-- 						<configuration> -->
+<!-- 							<output>${project.build.outputDirectory}/META-INF/maven/${project.groupId}/${project.artifactId}/effective-pom.xml</output> -->
+<!-- 						</configuration> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
 		</plugins>
 	</build>
 </project>

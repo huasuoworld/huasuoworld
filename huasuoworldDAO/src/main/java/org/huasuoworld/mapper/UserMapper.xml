@@ -13,7 +13,7 @@
 	<insert id="insert" parameterType="org.huasuoworld.common.po.User">
 		insert into tbUser(ID,
 		firstName, lastName, address, city, department)
-		VALUES(#{UsrID}, #{FirstNameUsr}, #{LastNameUsr}, #{AddressUsr}, #{CityUsr},
-		#{DepartmentUsr})
+		VALUES(#{ID}, #{firstName}, #{lastName}, #{address}, #{city},
+		#{department})
 	</insert>
 </mapper>
